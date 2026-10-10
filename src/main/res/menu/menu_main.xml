@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Arquivo responsável pela definição do menu de opções
+    da Activity principal da aplicação.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.persistncia_dados_sqlite_android.MainActivity">
+
+    <!--
+        Item de menu "Configurações".
+        Será exibido no menu de opções (três pontos)
+        devido à configuração showAsAction="never".
+    -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+</menu>
+

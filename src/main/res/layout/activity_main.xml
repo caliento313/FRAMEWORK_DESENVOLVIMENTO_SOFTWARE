@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout principal da tela de cadastro de produtos -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título da aplicação -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Produtos"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo para informar o nome do produto -->
+    <EditText
+        android:id="@+id/editNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Produto"
+        android:inputType="textPersonName" />
+
+    <!-- Campo para informar o preço do produto -->
+    <EditText
+        android:id="@+id/editPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Preço (ex: 12.50)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp" />
+
+    <!-- Botão responsável por salvar o produto -->
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:layout_marginTop="12dp" />
+
+    <!-- Texto que identifica a lista de produtos cadastrados -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produtos Cadastrados:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Lista que exibe os produtos armazenados no banco SQLite -->
+    <ListView
+        android:id="@+id/listViewProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
